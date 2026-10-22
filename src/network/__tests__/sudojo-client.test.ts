@@ -1247,6 +1247,22 @@ describe("SudojoClient", () => {
       );
     });
 
+    it("getBoards preserves bit 127 alongside bit 1", async () => {
+      const wideMask = ((1n << 127n) | 2n).toString();
+      await client.getBoards(TEST_TOKEN, {
+        level: undefined,
+        symmetrical: undefined,
+        limit: undefined,
+        offset: undefined,
+        techniques: wideMask,
+        technique_bit: wideMask,
+      });
+
+      expect(mockNetworkClient.getLastRequest()?.url).toBe(
+        `${BASE_URL}/api/v1/boards?techniques=${wideMask}&technique_bit=${wideMask}`,
+      );
+    });
+
     it.each([
       [
         "createBoard",

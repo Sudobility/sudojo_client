@@ -240,7 +240,7 @@ const createURLSearchParams = () => {
 /**
  * `JSON.stringify` replacer that sends a `bigint` as its exact base-10 string.
  *
- * Technique bitmasks (bit N = technique N, up to 61 bits) don't fit in a JS
+ * Technique bitmasks (bit N = technique N, up to 128 bits) don't fit in a JS
  * number, so `sudojo_api` accepts them as decimal strings. Plain
  * `JSON.stringify` throws on a `bigint`, and converting through `Number` would
  * drop the low bits.

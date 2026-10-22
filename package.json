@@ -1,6 +1,6 @@
 {
   "name": "@sudobility/sudojo_client",
-  "version": "0.0.164",
+  "version": "0.0.165",
   "description": "TypeScript client library for Sudojo API",
   "type": "module",
   "main": "dist/index.js",
@@ -37,15 +37,15 @@
   "license": "BUSL-1.1",
   "peerDependencies": {
     "@sudobility/di": "^1.5.70",
-    "@sudobility/sudojo_types": "^1.2.72",
-    "@sudobility/types": "^1.9.68",
+    "@sudobility/sudojo_types": "^1.2.73",
+    "@sudobility/types": "^1.9.71",
     "@tanstack/react-query": ">=5.0.0",
     "react": ">=18.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.38.0",
     "@sudobility/di": "^1.5.70",
-    "@sudobility/types": "^1.9.68",
+    "@sudobility/types": "^1.9.71",
     "@tanstack/react-query": "^5.90.5",
     "@testing-library/react": "^16.3.0",
     "@types/node": "^24.9.1",
@@ -62,14 +62,14 @@
     "vitest": "^3.2.4"
   },
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/johnqh/sudojo_client.git"
   },
   "dependencies": {
-    "@sudobility/sudojo_types": "^1.2.72"
+    "@sudobility/sudojo_types": "^1.2.73"
   },
   "exports": {
     ".": {
