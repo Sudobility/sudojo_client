@@ -4,12 +4,10 @@
   "workspaces": {
     "": {
       "name": "@sudobility/sudojo_client",
-      "dependencies": {
-        "@sudobility/sudojo_types": "^1.2.75",
-      },
       "devDependencies": {
         "@eslint/js": "^9.38.0",
         "@sudobility/di": "^1.5.75",
+        "@sudobility/sudojo_types": "^1.2.75",
         "@sudobility/types": "^1.9.74",
         "@tanstack/react-query": "^5.90.5",
         "@testing-library/react": "^16.3.0",
@@ -228,7 +226,7 @@
 
     "@firebase/storage-types": ["@firebase/storage-types@0.8.5", "", { "peerDependencies": { "@firebase/app-types": "0.x", "@firebase/util": "1.x" } }, "sha512-GEDs5P+rNUfNcS+wxIdOLAHficife2YXtvTJnyi3ssrX11AAtBg+nDUdbYh8vuBzWehVQZPmztGUUnud4L+4yg=="],
 
-    "@firebase/util": ["@firebase/util@1.15.3", "", { "dependencies": { "tslib": "^2.1.0" }, "hasInstallScript": true }, "sha512-c/z/gaIlaaLZEuGbE6sLUuJ61tskg1JghvhcNQzW948ASBinbVBBRnZTC4b4yt4LaEtJQkYlyzqLHcutFwEIvA=="],
+    "@firebase/util": ["@firebase/util@1.15.3", "", { "dependencies": { "tslib": "^2.1.0" } }, "sha512-c/z/gaIlaaLZEuGbE6sLUuJ61tskg1JghvhcNQzW948ASBinbVBBRnZTC4b4yt4LaEtJQkYlyzqLHcutFwEIvA=="],
 
     "@firebase/webchannel-wrapper": ["@firebase/webchannel-wrapper@1.0.7", "", {}, "sha512-phBFwieDLvkZGYN9CE9ZFNEIoBVksprzsnCzQejCmCHtgwCXReeuRpoEGN9C4EbhONztv8NRV1tau6Rb9pONwQ=="],
 
@@ -858,7 +856,7 @@
 
     "promise": ["promise@8.3.0", "", { "dependencies": { "asap": "~2.0.6" } }, "sha512-rZPNPKTOYVNEEKFaq1HqTgOwZD+4/YHS5ukLzQCypkj+OkYx7iv0mA91lJlpPPZ8vMau3IIGj5Qlwrx+8iiSmg=="],
 
-    "protobufjs": ["protobufjs@7.6.6", "", { "dependencies": { "@protobufjs/aspromise": "^1.1.2", "@protobufjs/base64": "^1.1.2", "@protobufjs/codegen": "^2.0.5", "@protobufjs/eventemitter": "^1.1.1", "@protobufjs/fetch": "^1.1.1", "@protobufjs/float": "^1.0.2", "@protobufjs/path": "^1.1.2", "@protobufjs/pool": "^1.1.0", "@protobufjs/utf8": "^1.1.1", "@types/node": ">=13.7.0", "long": "^5.3.2" }, "hasInstallScript": true }, "sha512-dYDWdjSl5RNb7SgPxGQcRU+GtvP7s2fpkrY0r432PcOIaZ0/rBcxEZnQN67iJhFuQiVw754JDoPruPCNdGsbjg=="],
+    "protobufjs": ["protobufjs@7.6.6", "", { "dependencies": { "@protobufjs/aspromise": "^1.1.2", "@protobufjs/base64": "^1.1.2", "@protobufjs/codegen": "^2.0.5", "@protobufjs/eventemitter": "^1.1.1", "@protobufjs/fetch": "^1.1.1", "@protobufjs/float": "^1.0.2", "@protobufjs/path": "^1.1.2", "@protobufjs/pool": "^1.1.0", "@protobufjs/utf8": "^1.1.1", "@types/node": ">=13.7.0", "long": "^5.3.2" } }, "sha512-dYDWdjSl5RNb7SgPxGQcRU+GtvP7s2fpkrY0r432PcOIaZ0/rBcxEZnQN67iJhFuQiVw754JDoPruPCNdGsbjg=="],
 
     "punycode": ["punycode@2.3.1", "", {}, "sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg=="],
 
