@@ -4,6 +4,10 @@ React Query hooks and API client for the Sudojo Sudoku learning platform.
 
 ## Installation
 
+`@sudobility/*` packages are published to GitHub Packages, so consumers need an
+`.npmrc` with `@sudobility:registry=https://npm.pkg.github.com` (and a token with
+`read:packages` for private installs).
+
 ```bash
 bun add @sudobility/sudojo_client
 # peers
@@ -36,9 +40,9 @@ const levels = await client.getLevels(token);
 
 ## API
 
-- **Hooks**: 57 `useSudojo*` hooks, including `useSudojoInvalidation`, covering levels, techniques, learning, boards, dailies, challenges, users, practices, communities, strategies, gamification, and health
-- **Solver hooks**: `useSolverSolve`, `useSolverValidate`, `useSolverGenerate`
-- **Client**: `SudojoClient` class with 67 typed API methods, and the `createSudojoClient` factory
+- **Hooks**: 78 `useSudojo*` hooks, including `useSudojoInvalidation`, covering levels, techniques, learning, boards, dailies, challenges, examples, users, practices, communities, strategies, gamification, OCR, and health
+- **Solver hooks**: `useSolverSolve`, `useSolverValidate`, `useSolverGenerate` (plus imperative `*Mutation` variants)
+- **Client**: `SudojoClient` class with 79 typed API methods, and the `createSudojoClient` factory (both `@deprecated` at the root entry; prefer hooks)
 - **Errors**: `HintAccessDeniedError` (HTTP 402 from the solver)
 - **Query keys**: `queryKeys`, `solverQueryKeys`, `STALE_TIMES`, `SOLVER_STALE_TIMES`
 
@@ -47,16 +51,18 @@ Full endpoint, hook, and cache reference: [docs/API.md](docs/API.md).
 ## Development
 
 ```bash
-bun run build        # Build to dist/
-bun run test:run     # Run Vitest once (`bun run test` watches)
-bun run typecheck    # TypeScript check
+bun install          # Install dependencies (uses bun.lock)
+bun run build        # Build to dist/ (tsc + scripts/fix-esm-imports.mjs)
+bun run test:run     # Run Vitest once (`test:watch` watches; there is no `test` script)
+bun run typecheck    # TypeScript check (tsc --noEmit)
 bun run lint         # ESLint
 bun run check-all    # Lint + typecheck + tests
+bun run verify       # check-all + build
 ```
 
 ## Related Packages
 
-- `@sudobility/sudojo_types`: type definitions (dependency + peer dependency)
+- `@sudobility/sudojo_types`: type definitions (peer + dev dependency)
 - `@sudobility/types`: `NetworkClient`, `BaseResponse` (peer dependency)
 - `sudojo_api`: the backend this client calls
 - `@sudobility/sudojo_lib`: business-logic hooks built on this client
