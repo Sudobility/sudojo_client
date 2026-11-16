@@ -1,4 +1,8 @@
-import type { NetworkClient, UserInfoResponse } from "@sudobility/types";
+import type {
+  HealthCheckData,
+  NetworkClient,
+  UserInfoResponse,
+} from "@sudobility/types";
 import {
   type BadgeDefinition,
   type BadgeDefinitionCreateRequest,
@@ -30,7 +34,6 @@ import {
   type GamificationStats,
   type GenerateData,
   type GenerateOptions,
-  type HealthCheckData,
   type HintAccessDeniedResponse,
   isValidLevel,
   isValidUUID,

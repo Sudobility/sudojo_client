@@ -8,8 +8,11 @@ import {
   UseQueryOptions,
   UseQueryResult,
 } from "@tanstack/react-query";
-import type { NetworkClient } from "@sudobility/types";
-import type { BaseResponse, HealthCheckData } from "@sudobility/sudojo_types";
+import type {
+  BaseResponse,
+  HealthCheckData,
+  NetworkClient,
+} from "@sudobility/types";
 import { queryKeys } from "./query-keys";
 import { STALE_TIMES } from "./query-config";
 import { SudojoClient } from "../network/sudojo-client";
